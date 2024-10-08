@@ -24,7 +24,7 @@ public class PhanSo {
 
     // Phương thức cộng hai phân số
     public PhanSo congPhanSo(PhanSo ps) {
-        int tuMoi = this.tuSo * ps.getMauSo() + ps.getTuSo() * this.mauSo;
+        int tuMoi = this.tuSo * ps.getMauSo() - ps.getTuSo() * this.mauSo; // sai 
         int mauMoi = this.mauSo * ps.getMauSo();
         return new PhanSo(tuMoi, mauMoi);
     }
